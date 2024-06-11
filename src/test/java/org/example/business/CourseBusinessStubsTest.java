@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CourseBusinessTest {
+public class CourseBusinessStubsTest {
 
     @Test
     void testCoursesRelatedToString_When_UsingAStub() {

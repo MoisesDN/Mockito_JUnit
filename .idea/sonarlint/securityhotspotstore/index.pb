@@ -29,3 +29,5 @@ Q.idea/sonarlint/securityhotspotstore/6/9/69a57668473fd5e234640c2477de7696f302b3
 Q.idea/sonarlint/securityhotspotstore/7/0/70aabc3c877f1f0e7fe8af83e63a21a683d41a87,2\2\2288f79c81d7ddf814ec6df9dece153a2d317898
 Å
 Q.idea/sonarlint/securityhotspotstore/3/a/3ab7914c53e5f68123dd86aa9ebe1e7ecbfac968,3\7\37de9aaef7d843149c049e323ca81196a6652c78
+k
+;src/test/java/org/example/mockito/HamcrestMatchersTest.java,9\9\994a0883d26c06e5a63b54ff68d454b9bdd5c149

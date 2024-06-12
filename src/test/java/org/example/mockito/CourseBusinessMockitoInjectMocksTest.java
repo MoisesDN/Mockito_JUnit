@@ -5,7 +5,12 @@ import org.example.service.CourseService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,17 +19,22 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.BDDMockito.*;
 
-class CourseBusinessMockWithBDDTest {
+@ExtendWith(MockitoExtension.class)
+class CourseBusinessMockitoInjectMocksTest {
 
+    @Mock
     CourseService mockService;
+
+    @InjectMocks
     CourseBusiness business;
+
+    @Captor
+    ArgumentCaptor<String> argumentCaptor;
     List<String> courses;
 
     @BeforeEach
     void setup() {
         //Given / Arrange
-        mockService = mock(CourseService.class);
-        business = new CourseBusiness(mockService);
         courses = Arrays.asList(
                 "REST API's RESTFul do 0 á Azure com ASP.NET",
                 "Agile Desmitificado",
@@ -61,10 +71,7 @@ class CourseBusinessMockWithBDDTest {
         business.deleteCoursesNotRelatedToSpring("Leandro");
         //Then / Assert
 
-        /*verify(mockService).deleteCourse("Agile Desmitificado");
-        verify(mockService).deleteCourse("Arquitetura de microsserviços");*/
-        //verify(mockService, times(1)).deleteCourse("Agile Desmitificado");
-        //verify(mockService, atLeast(1)).deleteCourse("Agile Desmitificado");
+
         verify(mockService, atLeastOnce()).deleteCourse("Agile Desmitificado");
         verify(mockService).deleteCourse("Arquitetura de microsserviços");
         verify(mockService, never()).deleteCourse("REST API's RESTFul do 0 á AWS com Spring Boot 3 java");
@@ -104,27 +111,15 @@ class CourseBusinessMockWithBDDTest {
 
         //Given / Arrange
 
-       /* courses = Arrays.asList(
-                "Agile Desmitificado",
-                "REST API's RESTFul do 0 á AWS com Spring Boot 3 Kotlin"
-        );*/
         given(mockService.retrieveCourses("Leandro"))
                 .willReturn(courses);
 
-        ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
+       // ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
 
         String agileDesmitificado = "Agile Desmitificado";
         //When / Act
         business.deleteCoursesNotRelatedToSpring("Leandro");
         //Then / Assert
-
-
-
-        /*then(mockService)
-                .should()
-                .deleteCourse(argumentCaptor.capture());
-
-        assertThat(argumentCaptor.getValue(), is(agileDesmitificado));*/
 
         then(mockService)
                 .should(times(5))

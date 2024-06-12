@@ -31,3 +31,9 @@ Q.idea/sonarlint/securityhotspotstore/7/0/70aabc3c877f1f0e7fe8af83e63a21a683d41a
 Q.idea/sonarlint/securityhotspotstore/3/a/3ab7914c53e5f68123dd86aa9ebe1e7ecbfac968,3\7\37de9aaef7d843149c049e323ca81196a6652c78
 k
 ;src/test/java/org/example/mockito/HamcrestMatchersTest.java,9\9\994a0883d26c06e5a63b54ff68d454b9bdd5c149
+t
+Dsrc/test/java/org/example/mockito/CourseBusinessMockWithBDDTest.java,e\b\eb9ddc51ad692066237385c07631de67bfbf6aa2
+{
+Ksrc/test/java/org/example/mockito/CourseBusinessMockitoInjectMocksTest.java,7\5\7530479cc10e3d1e246802115b4f2cbd4f3cec6e
+^
+.src/test/java/org/example/mockito/SpyTest.java,6\5\65e5af883b81489ec3ead31e4f1806c2118d1c8e

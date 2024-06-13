@@ -1,0 +1,10 @@
+
+Q
+java:S1172"/Remove this unused method parameter "netPrice".(½ÀÕ–ÿÿÿÿÿ8Ğ•æ—2
+G	java:S106"+Replace this use of System.out by a logger.(»Š˜Ô8Ñ•æ—2
+W
+java:S1068":Remove this unused "allowForeignCurrencies" private field.(¦üÁú8Õ•æ—2
+O
+java:S1068"2Remove this unused "fallbackOption" private field.(Ø§½Å8Õ•æ—2
+M
+java:S1068	"+Remove this unused "taxRate" private field.(äÊ”Êüÿÿÿÿ8Õ•æ—2

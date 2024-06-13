@@ -31,8 +31,6 @@ Q.idea/sonarlint/securityhotspotstore/7/0/70aabc3c877f1f0e7fe8af83e63a21a683d41a
 Q.idea/sonarlint/securityhotspotstore/3/a/3ab7914c53e5f68123dd86aa9ebe1e7ecbfac968,3\7\37de9aaef7d843149c049e323ca81196a6652c78
 k
 ;src/test/java/org/example/mockito/HamcrestMatchersTest.java,9\9\994a0883d26c06e5a63b54ff68d454b9bdd5c149
-t
-Dsrc/test/java/org/example/mockito/CourseBusinessMockWithBDDTest.java,e\b\eb9ddc51ad692066237385c07631de67bfbf6aa2
 {
 Ksrc/test/java/org/example/mockito/CourseBusinessMockitoInjectMocksTest.java,7\5\7530479cc10e3d1e246802115b4f2cbd4f3cec6e
 ^
@@ -43,3 +41,13 @@ d
 -src/main/java/org/example/services/Order.java,b\0\b0d41ae9ce5f4ecc032007f0b9866ca41699dd4d
 h
 8src/test/java/org/example/services/OrderServiceTest.java,4\e\4ed6001d6a25839841d6a8377a9665f73a2ad952
+g
+7src/main/java/org/example/staticwithparams/MyUtils.java,1\5\155e014f238bf169ee67ec05391fecd0dd885e67
+k
+;src/test/java/org/example/staticwithparams/MyUtilsTest.java,2\2\228c127e1eb40b463ce1a791d93f44215d702231
+k
+;src/main/java/org/example/constructor/PaymentProcessor.java,9\5\951c086f1030927506ba35ca7e51d14a9d52206c
+j
+:src/main/java/org/example/constructor/CheckoutService.java,f\b\fb29d80f23b13c81163656aa9ee6cc35d25d82de
+n
+>src/test/java/org/example/constructor/CheckoutServiceTest.java,a\2\a2691ed793dde79dd5eb2ede1368e47eae3f5498
